@@ -1,4 +1,4 @@
-# Optimize In Action
+# Optimization In Action
 
 
 ## Question

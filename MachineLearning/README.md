@@ -15,11 +15,11 @@
 + **Probabilistic Graphical Model**
 + **Rule Learing**
 + **Reinforcement Learing**
-+ **OptimizeInAction**
++ **OptimizationInAction**
 
 > Notes:
 > 
-> [1] OptimizeInAction: Some implementations of Quasi-Newton methods.
+> [1] OptimizationInAction: Some implementations of Quasi-Newton methods.
 > 
 
 ## References
