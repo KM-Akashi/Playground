@@ -6,9 +6,9 @@ import collections
 import random
 
 
-class Corpus(torch.utils.data.Dataset):
+class SkipGram(torch.utils.data.Dataset):
     def __init__(self, file_path, window_size, min_frequency=0):
-        super(Corpus, self).__init__()
+        super(SkipGram, self).__init__()
         with open(file_path, 'r') as f:
             lines = f.readlines()
             raw_dataset = [st.split() for st in lines]

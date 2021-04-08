@@ -6,7 +6,7 @@ import torch.optim as optim
 
 class Embedding(nn.Module):
     def __init__(self, num_embeddings, embedding_dim):
-        super(SkipGrams, self).__init__()
+        super(Embedding, self).__init__()
         self.num_embeddings, self.embedding_dim = num_embeddings, embedding_dim
         self.embed_v = nn.Embedding(num_embeddings, embedding_dim)
         self.embed_u = nn.Embedding(num_embeddings, embedding_dim)

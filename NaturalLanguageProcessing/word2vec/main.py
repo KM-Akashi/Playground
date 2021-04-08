@@ -1,5 +1,5 @@
 from model.embedding import Embedding
-from utils.dataset import Corpus
+from utils.dataset import SkipGram
 
 import torch
 import torch.nn as nn
@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import time
 
 if __name__ == "__main__":
-    dataset = Corpus('data/rawdata.txt', 3)
+    dataset = SkipGram('data/rawdata.txt', 3)
     dataloader = torch.utils.data.DataLoader(dataset,
                                              batch_size=1024,
                                              shuffle=True)
