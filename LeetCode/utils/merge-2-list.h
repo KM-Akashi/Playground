@@ -1,3 +1,4 @@
+#pragma once
 int *merge(int *nums1, int nums1Size, int *nums2, int nums2Size)
 {
     int merged[nums1Size + nums2Size];
