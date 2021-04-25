@@ -2,15 +2,9 @@
 
 int min(int a, int b)
 {
-    if (a < b)
-        return a;
-    else
-        return b;
+    return a < b ? a : b;
 }
-int min(int a, int b, int c)
+int min3(int a, int b, int c)
 {
-    if (a < min(b, c))
-        return a;
-    else
-        return min(b, c);
+    return a < min(b, c) ? a : min(b, c);
 }
