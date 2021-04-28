@@ -22,17 +22,17 @@ int minPathSum(int **grid, int gridSize, int *gridColSize)
                 continue;
             }
 
-            int fromTop, fromRight;
+            int fromTop, fromLeft;
             if (i == 0)
                 fromTop = 1000;
             else
                 fromTop = count[i - 1][j];
             if (j == 0)
-                fromRight = 1000;
+                fromLeft = 1000;
             else
-                fromRight = count[i][j - 1];
+                fromLeft = count[i][j - 1];
 
-            count[i][j] = min(fromTop, fromRight) + grid[i][j];
+            count[i][j] = min(fromTop, fromLeft) + grid[i][j];
         }
     }
     return count[m - 1][n - 1];
