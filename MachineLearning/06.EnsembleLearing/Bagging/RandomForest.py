@@ -105,6 +105,7 @@ def C45(D: DataFrame, A: set, e=0):
 
 ##########################################################
 class RandomForest(object):
+    # TODO oob error
     def __init__(self, forest_size, sample_rate=0.8):
         self.forest_size = forest_size
         self.forest = list()
