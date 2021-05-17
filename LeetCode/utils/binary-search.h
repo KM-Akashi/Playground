@@ -6,7 +6,7 @@ int BinarySearch(int *vals, int size, int key)
 {
     int low = 0;
     int high = size - 1;
-    while (low < high)
+    while (low <= high)
     {
         int mid = (int)((low + high) / 2);
         if (vals[mid] == key)
